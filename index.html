@@ -2,61 +2,110 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mi música</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mag1kox</title>
+
   <style>
     body {
       margin: 0;
+      min-height: 100vh;
+      background: #111;
+      color: white;
       font-family: Arial, sans-serif;
-      background: #000;
-      color: #fff;
-      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    .container {
-      max-width: 420px;
-      margin: auto;
-      padding: 20px;
-    }
-    img {
+
+    /* Portada */
+    .portada {
       width: 100%;
-      border-radius: 12px;
-      margin-bottom: 20px;
+      max-width: 600px;
+      margin-top: 30px;
+      border-radius: 14px;
     }
-    a {
-      display: block;
-      text-decoration: none;
-      color: #fff;
-      background: #1a1a1a;
+
+    /* Contenedor de links */
+    .links {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+      max-width: 260px;
+    }
+
+    .links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #222;
       padding: 14px;
-      margin: 10px 0;
-      border-radius: 8px;
-      font-weight: bold;
+      border-radius: 10px;
+      transition: background 0.2s ease, transform 0.2s ease;
     }
-    a:hover {
+
+    .links a:hover {
       background: #333;
+      transform: scale(1.03);
+    }
+
+    .links img {
+      width: 32px;
+      height: auto;
+    }
+
+    /* Logo del sello */
+    .label-logo {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 120px;
+      opacity: 0.75;
+    }
+
+    .label-logo img {
+      width: 100%;
+      height: auto;
     }
   </style>
-  .insta img {
-  width: 90px;
-  margin: 40px auto;
-  transition: transform 0.2s ease;
-}
-
-.insta img:hover {
-  transform: scale(1.1);
-}
 </head>
+
 <body>
 
-  <div class="container">
-    <img src="portada.jpg" alt="Portada">
+  <!-- Portada -->
+  <img src="portada.jpg" alt="Portada" class="portada">
 
-    <a href="https://instagram.com/MaG1kOx¨ target="_blank">Instagram</a>
-    <a href="https://open.spotify.com/artist/TU_ID" target="_blank">Spotify</a>
-    <a href="https://music.apple.com/" target="_blank">Apple Music</a>
-    <a href="https://music.amazon.es/" target="_blank">Amazon Music</a>
-    <a href="https://www.deezer.com/" target="_blank">Deezer</a>
-    <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+  <!-- Links -->
+  <div class="links">
+    <a href="https://instagram.com/mag1kox" target="_blank">
+      <img src="Instagram.png" alt="Instagram">
+    </a>
+
+    <a href="#">
+      <img src="spotify.png" alt="Spotify">
+    </a>
+
+    <a href="#">
+      <img src="applemusic.png" alt="Apple Music">
+    </a>
+
+    <a href="#">
+      <img src="amazonmusic.png" alt="Amazon Music">
+    </a>
+
+    <a href="#">
+      <img src="deezer.png" alt="Deezer">
+    </a>
+
+    <a href="#">
+      <img src="youtube.png" alt="YouTube">
+    </a>
+  </div>
+
+  <!-- Logo sello -->
+  <div class="label-logo">
+    <img src="iarecords.PNG" alt="IA Records">
   </div>
 
 </body>
